@@ -1,0 +1,23 @@
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+
+.dashed-line {
+    stroke: lightgrey;
+    stroke-width: 2px;
+    stroke-dasharray: 6 2;
+}
+
+.step-path {
+    stroke: red;
+    stroke-width: 1px;
+    stroke-dasharray: 2 2;
+}
