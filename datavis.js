@@ -228,9 +228,11 @@ window.onload = function() {
 				deminish();
 				d3.select("#total-am").text(d.Total_AM);
 				d3.select("#steps-am").text(d.Steps_AM);
-				d3.select("#vr-am").text("no VR played today")
 				d3.select("#steps-total").text(d['Total Steps'])
 				d3.select("#date").text(d.Date);
+				d3.select("#vr-am").style("display", "none")
+				d3.select("#max-vr-hr").style("display", "none")
+				d3.select("#vr-hr-wrapper").style("display", "none")
 				d3.selectAll(".tooltip").style("visibility", "visible");
 			}
 
@@ -240,6 +242,10 @@ window.onload = function() {
 				d3.selectAll(".dot").attr("opacity", 1);
 				d3.selectAll(".legend-item").attr("opacity", 1);
 				d3.selectAll(".total-line").attr("opacity", 1);
+				d3.select("#vr-am").style("display", "inline")
+				d3.select("#max-vr-hr").style("display", "inline")
+				d3.select("#vr-hr-wrapper").style("display", "inline")
+
 				d3.selectAll(".tooltip").style("visibility", "hidden");
 			}
 
