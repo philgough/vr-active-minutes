@@ -5,8 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+	<script type="text/javascript" src="d3js.v5.5.0.min.js"></script>
+	
+	<h1 id="load">Loading...</h1>
+
 	<svg id='chart'></svg>
+
+	<div class="tooltip">
+		<p><strong><span id="date"></span></strong></p>
+		<p>Games: <strong><span id="games"></span></strong></p>
+		<p>Total active mintues: <strong><span id="total-am"></span></strong></p>
+		<p>Walking active minutes: <strong><span id="steps-am"></span></strong></p>
+		<p>VR active Minutes: <strong><span id="vr-am"></span></strong></p>
+		<p>Total Steps: <strong><span id="steps-total"></span></strong></p>
+		<p>Max VR Heart Rate: <strong><span id="max-vr-hr"></span></strong></p>
+		<p id="vr-hr-wrapper">Heart Rate (during VR)</p>
+
+	</div>
 	<script type="text/javascript" src="datavis.js"></script>
 </body>
 </html>
